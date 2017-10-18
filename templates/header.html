@@ -1,0 +1,20 @@
+<div class="head">
+<div class="row">
+	<div class="col-md-6">
+		<a href="{{url_for('showGenres')}}">
+			<span class="glyphicon glyphicon-home homeIcon" aria-hidden="true"></span>
+			<span>Show All Genres</span>
+		</a>
+	</div>
+	<div class="col-md-6 text-right" id="top_of_page">
+{% if not session.username %}
+    <a href="{{url_for('showLogin')}}"><span class="log">Login</span></a>
+{% else %}
+    <a href="{{url_for('disconnect')}}"><span class="log">Log Out</span></a>
+{% endif %}
+
+	</div>
+</div>
+<img src="http://goodereader.com/blog/uploads/images/ebooks_2.jpg" class="img-rounded bookLogo">
+<h1>eBookz shop</h1>
+</div>

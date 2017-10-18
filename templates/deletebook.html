@@ -1,0 +1,19 @@
+{% extends "main.html" %}
+{% block content %}
+{% include "header.html" %}
+
+<p class="del"> Are you sure, do you want to delete '{{book.name}}'? </p>
+
+<form action="{{ url_for('deleteBook', genre_id = genre_id, book_id=book_id, book=bookToDelete)}}" method = 'post'>
+
+	<button type="submit" class="btn btn-danger delete" id="submit" type="submit">
+	<span class="glyphicon glyphicon-trash gly" aria-hidden="true"></span>Delete</button>
+
+</form>
+
+	<a href = '{{url_for('showGenres')}}'>
+		<button class="btn btn-primary delete cancel">
+		<span class="glyphicon glyphicon-remove gly" aria-hidden="true"></span> Cancel</button>
+	</a>
+
+{% endblock %}

@@ -1,0 +1,59 @@
+{% extends "main.html" %}
+{% block content %}
+{% include "header.html" %}
+	
+	<div class="row">
+		<div class="col-md-12"></div>
+	</div>
+	<div class="row ">
+			<h2>{{ genre.name }}</h2>
+			<figure class="creator">
+				<img src="{{ creator.picture}}">
+				<figcaption class="name">{{ creator.name }}</figcaption>
+			</figure>
+	</div>
+	<div class="row">
+		<div class="col-md-1"></div>
+		<div class="col-md-11">
+			
+		</div>
+		<div class="col-md-7"></div>
+	</div>
+	<div class="row">
+		<div class="col-md-12">
+			{% with messages = get_flashed_messages() %}
+				{% if messages %}
+					<ul>
+						{% for message in messages %}
+							 <li> <strong> {{ message }} </strong> </li>
+						{% endfor %}
+					</ul>
+				{% endif %}
+			{% endwith %}
+		</div>
+	</div>
+	{% if books !=[] %}	
+		<div class="row">
+					{% for i in books %}
+					    <div class="books">
+							<div class="words">
+							  <div class="col-md-5">	
+								<img src="{{i.picture}}">
+							  </div>
+							  <div class="col-md-7">	
+								<h3>{{i.name}}</h3>
+								<span class="author">by <strong>{{i.author}}</strong></span>
+								<span class="bookRating">Rating: <strong>{{i.rating}}</strong></span>
+								<span>Price: <strong>{{i.price}}</strong></span>
+								<p>{{i.description}}</p>
+							</div>
+							</div>
+						</div>
+					{% endfor %}
+	<figure>
+          <a href="#top_of_page"><img src="http://www.webdesigndonewell.com/images/icon-top-of-page.png" class="top_of_page" alt="top_of_page icon"></a>
+    </figure>
+		</div>
+	{% endif %}
+
+{% endblock %}

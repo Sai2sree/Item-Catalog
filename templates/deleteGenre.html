@@ -1,0 +1,16 @@
+{% extends "main.html" %}
+{% block content %}
+{% include "header.html" %}
+
+<p class="del"> Are you sure, do you want to delete {{genre.name}}? </p>
+
+<form action="{{ url_for('deleteGenre', genre_id = genre.id)}}" method = 'post'>
+
+	<button type="submit" class="btn btn-danger delete" id="submit" type="submit">
+	<span class="glyphicon glyphicon-trash gly" aria-hidden="true"></span>Delete</button>
+</form>
+<a href = "{{url_for('showGenres')}}">	
+	<button class="btn btn-primary cancel">
+	<span class="glyphicon glyphicon-remove gly" aria-hidden="true"></span> Cancel</button>
+	</a>
+{% endblock %}

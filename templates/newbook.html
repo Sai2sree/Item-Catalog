@@ -1,0 +1,45 @@
+{% extends "main.html" %}
+{% block content %}
+{% include "header.html" %}
+	<div class="row">
+		<div class="col-md-12"></div>
+	</div>
+	<div class="row">
+		<div class="col-md-11 col-md-offset-1">
+			<h2>New Book</h2>
+		</div>
+	</div>
+	<div class="row">
+		<div class="col-md-6 col-md-offset-1">
+			<form action="{{ url_for('newBook', genre_id=genre_id)}}"  method = "POST">
+				<div class="form-group">
+					<label for="picture">Book cover pic url :</label>
+					<input type ="text" maxlength="100" class="form-control" name="picture" placeholder="url for book cover pic">
+
+					<label for="name">Name:</label>
+					<input type ="text" maxlength="50" class="form-control" name="name" placeholder="Name of the book">
+                    
+                    <label for="author">Author:</label>
+					<input type ="text" maxlength="50" class="form-control" name="author" placeholder="Author of the book">
+
+					<label for="description">Description:</label>
+					<textarea class="form-control" maxlength="500" rows="10" name="description" placeholder="Description of the book"></textarea>
+
+					<label for="price">Price:</label>
+					<div class="input-group">
+						<div class="input-group-addon">$</div>
+						<input type ="text" class="form-control line" maxlength="20" name="price" placeholder="Price in $">
+					</div>
+					
+					<label for="rating">Rating:</label>
+					<input type ="text" maxlength="50" class="form-control" name="rating" placeholder="Rating of the book">
+
+					<button type="submit" class="btn btn-success add" id="submit" type="submit">
+					<span class="glyphicon glyphicon-book gly" aria-hidden="true"></span>Create</button>
+				</div>
+			</form>
+			
+		</div>
+	</div>
+{% endblock %}
+

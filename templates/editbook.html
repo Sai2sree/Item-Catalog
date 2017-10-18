@@ -1,0 +1,47 @@
+{% extends "main.html" %}
+{% block content %}
+{% include "header.html" %}
+	<div class="row">
+		<div class="col-md-12"></div>
+	</div>
+	<div class="row">
+		<div class="col-md-11 col-md-offset-1">
+			<h2>Edit Book</h2>
+		</div>
+	</div>
+	<div class="row">
+		<div class="col-md-6 col-md-offset-1">
+			<form action="{{ url_for('editBook', genre_id = genre_id, book_id=book_id, book=editedBook)}}" method = "post">
+				<div class="form-group">
+					<label for="picture">Book cover pic url :</label>
+					<input type ="text" maxlength="100" class="form-control" name="picture" placeholder="{{book.picture}}">
+
+					<label for="name">Name:</label>
+					<input type ="text" maxlength="100" class="form-control" name="name" value="{{book.name }}">
+                    
+                    <label for="author">Author:</label>
+					<input type ="text" maxlength="100" class="form-control" name="author" value="{{book.author }}">
+
+					<label for="description">Description:</label>
+					<textarea class="form-control" maxlength="500" rows="10" name="description">{{book.description}}</textarea>
+
+					<label for="price">Price:</label>
+					<div class="input-group">
+						<div class="input-group-addon">$</div>
+						<input type ="text" maxlength="10" class="form-control" name="price" value="{{book.price}}">
+					</div>
+                    
+                    <label for="name">Rating:</label>
+					<input type ="text" maxlength="100" class="form-control" name="rating" value="{{book.rating }}">
+
+					<button type="submit" class="btn btn-success edit" id="submit" type="submit">
+					<span class="glyphicon glyphicon-ok gly" aria-hidden="true"></span>Save</button>
+					<a href = '{{url_for('showGenres')}}'>
+						<button class="btn btn-primary delete">
+						<span class="glyphicon glyphicon-remove gly" aria-hidden="true"></span> Cancel</button>
+					</a>
+				</div>
+			</form>
+		</div>
+	</div>
+{% endblock %}
