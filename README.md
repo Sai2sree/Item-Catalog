@@ -50,3 +50,4 @@ Developed an application that provides a list of items within a variety of categ
 4. Run the command ``python database_setup.py``.
 5. Use the command ``python lotsofbookswithuser.py`` to load the data.
 6. To execute the program, run the command ``python project.py``.
+7. Access and test the application by visiting http://localhost:8000.
