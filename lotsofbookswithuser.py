@@ -33,7 +33,7 @@ session.add(genre1)
 session.commit()
 
 book1 = Book(user_id=1,
-             picture="http://via.placeholder.com/400x500",
+             picture="https://images.gr-assets.com/books/1478547346l/31932810.jpg",
              name="The Stone Sky",
              author="N.K.Jemisin",
              description="""THIS IS THE WAY THE WORLD ENDS... FOR THE LAST TIME.
@@ -55,7 +55,7 @@ session.add(book1)
 session.commit()
 
 book2 = Book(user_id=1,
-             picture="http://via.placeholder.com/400x500",
+             picture="https://images.gr-assets.com/books/1493649765l/34538054.jpg",
              name="The Hearts We Sold",
              author="Emily Lloyd-Jones",
              description="""When Dee Moreno makes a deal with a demon,
@@ -78,7 +78,7 @@ session.add(book2)
 session.commit()
 
 book3 = Book(user_id=1,
-             picture="http://via.placeholder.com/400x500",
+             picture="https://images.gr-assets.com/books/1490729236l/32711705.jpg",
              name="The Dazzling Heights",
              author="Katharine McGee",
              description="""New York City, 2118. Manhattan is home to a
@@ -100,7 +100,7 @@ session.commit()
 
 
 book4 = Book(user_id=1,
-             picture="http://via.placeholder.com/400x500",
+             picture="https://images.gr-assets.com/books/1500555996l/33571217.jpg",
              name="Reincarnation Blues",
              author="Michael Poore",
              description="""What if you could live forever but without your
@@ -128,7 +128,7 @@ session.add(genre2)
 session.commit()
 
 book1 = Book(user_id=1,
-             picture="http://via.placeholder.com/400x500",
+             picture="https://images.gr-assets.com/books/1476383220l/32051720.jpg",
              name="Wicked Like a Wildfire",
              author="Lana Popovic",
              description="""All the women in Iris and Malina s family have
@@ -152,7 +152,7 @@ session.add(book1)
 session.commit()
 
 book2 = Book(user_id=1,
-             picture="http://via.placeholder.com/400x500",
+             picture="https://images.gr-assets.com/books/1493399991l/30176334.jpg",
              name="Royally Endowed",
              author="Emma Chase",
              description="""Logan St. James is a smoldering, sexy beast.
@@ -194,7 +194,7 @@ session.add(book2)
 session.commit()
 
 book3 = Book(user_id=1,
-             picture="http://via.placeholder.com/400x500",
+             picture="https://images.gr-assets.com/books/1495203898l/22892448.jpg",
              name="The Color Project",
              author="Sierra Abrams",
              description="""Bernice Aurora Wescott has one thing she doesn't want
@@ -226,7 +226,7 @@ session.commit()
 
 
 book4 = Book(user_id=1,
-             picture="http://via.placeholder.com/400x500",
+             picture="https://images.gr-assets.com/books/1501528398l/33807229.jpg",
              name="Fallen Heir",
              author="Erin Watt",
              description="""These Royals will ruin you.
@@ -255,7 +255,7 @@ session.add(genre3)
 session.commit()
 
 book1 = Book(user_id=1,
-             picture="http://via.placeholder.com/400x500",
+             picture="https://b0f646cfbd7462424f7a-f9758a43fb7c33cc8adda0fd36101899.ssl.cf2.rackcdn.com/s/1/1490382553/harpercollins_us_frontbookcovers_298W/183219.jpg",
              name="The Good Daughter",
              author="Karin Slaughter",
              description="""Two girls are forced into the woods at
@@ -284,7 +284,7 @@ session.add(book1)
 session.commit()
 
 book2 = Book(user_id=1,
-             picture="http://via.placeholder.com/400x500",
+             picture="https://images.gr-assets.com/books/1484434383l/33574211.jpg",
              name="Emma in the Night",
              author="Wendy Walker",
              description="""From the bestselling author of All Is Not
@@ -308,7 +308,7 @@ session.add(book2)
 session.commit()
 
 book3 = Book(user_id=1,
-             picture="http://via.placeholder.com/400x500",
+             picture="https://images.gr-assets.com/books/1490369348l/32938170.jpg",
              name="I Know a Secret",
              author="Tess Gerritsen",
              description="""In the twelfth gripping novel featuring Jane
@@ -340,7 +340,7 @@ session.commit()
 
 
 book4 = Book(user_id=1,
-             picture="http://via.placeholder.com/400x500",
+             picture="https://images-na.ssl-images-amazon.com/images/I/41XnnrKlEZL._SX334_BO1,204,203,200_.jpg",
              name="Girl in Snow",
              author="Danya Kukafka",
              description="""Who Are You When No One Is Watching?
@@ -349,7 +349,7 @@ book4 = Book(user_id=1,
              not the boy who loved her too much; not the girl who wanted
              her perfect life, not the officer assigned to investigate
              her murder. In the aftermath of the tragedy, these three
-             indelible characters—Cameron, Jade, and Russ—must each
+             indelible characters Cameron, Jade, and Russ must each
              confront their darkest secrets in an effort to find solace,
              the truth, or both. 
              In crystalline prose, Danya Kukafka offers a brilliant
@@ -374,9 +374,9 @@ session.commit()
 
 
 book1 = Book(user_id=1,
-             picture="http://via.placeholder.com/400x500",
+             picture="https://images-na.ssl-images-amazon.com/images/I/519HKX9M69L.jpg",
              name="The Diary of a Young Girl",
-             author="Anne Frank, Eleanor Roosevelt",
+             author="Anne Frank",
              description="""Discovered in the attic in which she spent the
              last years of her life, Anne Frank's remarkable diary has since
              become a world classic a powerful reminder of the horrors of war
@@ -402,7 +402,7 @@ session.add(book1)
 session.commit()
 
 book2 = Book(user_id=1,
-             picture="http://via.placeholder.com/400x500",
+             picture="https://pictures.abebooks.com/isbn/9780307888440-us.jpg",
              name="The Immortal Life of Henrietta Lacks",
              author="Rebecca Skloot",
              description="""Henrietta Lacks, as HeLa, is known to present day
@@ -412,7 +412,7 @@ book2 = Book(user_id=1,
              still live decades after her death.
              Cells descended from her may weigh more than 50M metric tons.
              HeLa cells were vital for developing the polio vaccine;
-             uncovered secrets of cancer, viruses, and the atom bomb’s effects;
+             uncovered secrets of cancer, viruses, and the atom bombs effects;
              helped lead to important advances like in vitro fertilization,
              cloning, and gene mapping; and have been bought and sold by the
              billions. Yet Henrietta Lacks was buried in an unmarked grave.
@@ -433,7 +433,7 @@ session.add(book2)
 session.commit()
 
 book3 = Book(user_id=1,
-             picture="http://via.placeholder.com/400x500",
+             picture="https://images-na.ssl-images-amazon.com/images/I/41zAv4Ncy0L.jpg",
              name="Bossypants",
              author="Tina Fey",
              description="""Before Liz Lemon, before 'Weekend Update,' before
@@ -446,7 +446,7 @@ book3 = Book(user_id=1,
              as a vicious nerd to her tour of duty on Saturday Night Live;
              from her passionately halfhearted pursuit of physical beauty
              to her life as a mother eating things off the floor; from her
-             one sided college romance to her nearly fatal honeymoon—from
+             one sided college romance to her nearly fatal honeymoon from
              the beginning of this paragraph to this final sentence.
 
              Tina Fey reveals all, and proves what we've all suspected:
@@ -464,7 +464,7 @@ session.commit()
 
 
 book4 = Book(user_id=1,
-             picture="http://via.placeholder.com/400x500",
+             picture="https://upload.wikimedia.org/wikipedia/en/6/63/Into_the_Wild_%28book%29_cover.png",
              name="Into the Wild",
              author="Jon Krakauer",
              description="""In April 1992 a young man from a well to do
@@ -499,11 +499,11 @@ session.commit()
 
 
 book1 = Book(user_id=1,
-             picture="http://via.placeholder.com/400x500",
+             picture="https://images-na.ssl-images-amazon.com/images/I/51rKCiTFVzL._SX305_BO1,204,203,200_.jpg",
              name="Big Magic: Creative Living Beyond Fear",
              author="Elizabeth Gilbert",
              description="""Readers of all ages and walks of life have drawn inspiration
-             and empowerment from Elizabeth Gilbert’s books for years. Now this beloved
+             and empowerment from Elizabeth Gilberts books for years. Now this beloved
              author digs deep into her own generative process to share her wisdom and
              unique perspective about creativity. With profound empathy and radiant
              generosity, she offers potent insights into the mysterious nature of
@@ -524,7 +524,7 @@ session.add(book1)
 session.commit()
 
 book2 = Book(user_id=1,
-             picture="http://via.placeholder.com/400x500",
+             picture="https://images.gr-assets.com/books/1489239770l/33027965.jpg",
              name="Of Mess and Moxie: Wrangling Delight Out of This Wild and Glorious Life",
              author="Jen Hatmaker",
              description="""Jen Hatmaker believes backbone is the birthright of every woman.
@@ -554,17 +554,17 @@ session.add(book2)
 session.commit()
 
 book3 = Book(user_id=1,
-             picture="http://via.placeholder.com/400x500",
+             picture="https://images-na.ssl-images-amazon.com/images/I/51wYTwcoHgL._SX329_BO1,204,203,200_.jpg",
              name="Love Warrior",
              author="Glennon Doyle Melton",
              description="""The highly anticipated new memoir by bestselling author
-             Glennon Doyle Melton tells the story of her journey of self-discovery
+             Glennon Doyle Melton tells the story of her journey of self discovery
              after the implosion of her marriage.
 
              Just when Glennon Doyle Melton was beginning to feel she had it all
-             figured out—three happy children, a doting spouse, and a writing
+             figured out three happy children, a doting spouse, and a writing
              career so successful that her first book catapulted to the top
-             of the New York Times bestseller list—her husband revealed his
+             of the New York Times bestseller list her husband revealed his
              infidelity and she was forced to realize that nothing was as it
              seemed. A recovering alcoholic and bulimic, Glennon found that
              rock bottom was a familiar place. In the midst of crisis, she
@@ -593,7 +593,7 @@ session.commit()
 
 
 book4 = Book(user_id=1,
-             picture="http://via.placeholder.com/400x500",
+             picture="https://images-na.ssl-images-amazon.com/images/I/41luF9kOo6L._SX301_BO1,204,203,200_.jpg",
              name="Lean In: Women, Work, and the Will to Lead",
              author="Sheryl Sandberg, Nell Scovell",
              description="""Sheryl Sandbergs Lean In is a massive cultural phenomenon
