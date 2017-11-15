@@ -37,7 +37,11 @@ Developed an application that provides a list of items within a variety of categ
 - Find **Facebook Login** in the Recommended Products list and click **Set Up**.
 - Click **Facebook Login** that now appears in the left column.
 - Add ``http://localhost:8000/`` to the **Valid OAuth redirect URIs** section.
-- Replace 'app_id' and 'app_secret' values in the fb_client_secrets.json file so that it uses your credentials.
+- Create a file called fb_client_secrets.json file in the root directory of the repository.
+- Paste the following into the fb_client_secrets.json file:
+```
+{ "web": { "app_id": "ENTER_APP_ID_HERE", "app_secret": "ENTER_APP_SECRET_HERE" } }
+```
 
 ### Setup
 * Install [Python](https://docs.python.org/3/), [Vagrant](https://www.vagrantup.com/), and [VirtualBox](https://www.virtualbox.org/wiki/Downloads).
