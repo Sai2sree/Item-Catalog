@@ -26,7 +26,7 @@ Developed an application that provides a list of items within a variety of categ
 6. On the consent screen, type in a product name and save.
 7. In Authorized javascript origins add ``http://localhost:8000``
 8. Click create client ID
-9. Click download JSON and save it into the root director of this project.
+9. Click download JSON and save it into the root directory of this project.
 10. Rename the JSON file "client_secret.json"
 11. In login.html replace the 'data-clientid' value so that it uses your Client ID from the web applciation.
 
